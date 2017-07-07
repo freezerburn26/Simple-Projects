@@ -26,9 +26,9 @@ int main(int argc, char *argv[])
         for(int i = 1; i < argc; i++)
         {
             for(int k = 0; k < atoi(argv[i]); k++){
-                Die tempDie = Die(atoi(argv[i+1]));
+                Die tempDie = Die(atoi(argv[i+1])); //i+1 to get the second value (Size of Dice)
                 dice.push_back(tempDie);
-                diceSizes.push_back(atoi(argv[i+1]));
+                diceSizes.push_back(atoi(argv[i+1])); //i+1 to store the size of the dice
             }
             i++;
         }
